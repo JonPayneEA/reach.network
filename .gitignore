@@ -2,3 +2,17 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# renv (lockfile should be committed; library should not)
+renv/library/
+renv/staging/
+renv/python/
+
+# Generated diagram outputs (save locally, don't commit)
+outputs/
+*.png
+*.html
+
+# Package build artefacts
+*.tar.gz
+*.Rcheck/
