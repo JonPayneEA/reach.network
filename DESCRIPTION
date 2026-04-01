@@ -1,0 +1,24 @@
+Package: reach.network
+Title: River Network Diagram Tools for OS NGD Water Network Data
+Version: 0.1.0
+Authors@R:
+    person("Environment Agency", role = c("aut", "cre"),
+           email = "floodforecasting@environment-agency.gov.uk")
+Description: Builds simplified schematic and spatial network diagrams from
+    OS NGD Water Network data. Handles gauge snapping (with explicit exclusion
+    of rain gauges), optional model metadata annotation, and produces both
+    static (PNG) and interactive (HTML) outputs. Part of the flode ecosystem.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+    sf (>= 1.0-0),
+    igraph (>= 1.5.0),
+    ggplot2 (>= 3.4.0),
+    patchwork (>= 1.1.0),
+    visNetwork (>= 2.1.0),
+    data.table (>= 1.14.0)
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
